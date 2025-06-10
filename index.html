@@ -294,10 +294,13 @@
 
         .gallery-title {
             font-size: 4rem;
-            color: #005a9f;
             text-shadow: 0 0 10px 20px rgba(0, 3, 208, 0.7);
             margin-bottom: 20px;
             font-weight: bold;
+        }
+
+        .gallery-title span {
+            display: block;
         }
 
         .photo-container {
@@ -415,6 +418,10 @@
             .gallery-title {
                 font-size: 2.5rem;
             }
+
+            .gallery-title span {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
@@ -454,7 +461,9 @@
     <!-- Gallery Section -->
     <div class="gallery-section" id="gallerySection">
         <div class="gallery-center">
-            <h1 class="gallery-title" id="galleryTitle">Happy Birthday!</h1>
+            <h1 class="gallery-title" id="galleryTitle">
+                Happy Birthday, Zayn
+            </h1>
         </div>
         <!-- Photo containers will be added dynamically -->
     </div>
@@ -475,14 +484,11 @@
 
         // Messages for the typewriter effect
         const messages = [
-            "Wishing you the happiest of birthdays Zayn!",
-            "May your day be filled with joy and laughter.",
-            "You're an amazing friend and I'm grateful for you.",
-            "May this year bring you success and happiness.",
-            "Cheers to another year of wonderful memories!",
-            "You deserve all the best that life has to offer.",
-            "Hope your special day is as incredible as you are!",
-            "Sending you lots of love and warm wishes."
+            "I wish I could just show you how much you mean to me.",
+            "I wish I could let you look into my mind so that you would see how much I'm in love with you.",
+            "Anyway, leaving all that aside—happy birthday!",
+            "May you achieve success in all aspects of your life.",
+            "Wishing you the happiest of birthdays Zayn!"
         ];
 
         // Create particles
@@ -530,7 +536,7 @@
                 photoContainer.className = 'photo-container';
 
                 // Set random position and size (mobile portrait ratio)
-                const width = Math.random() * 100 + 150; // 150-300px
+                const width = Math.random() * 100 + 75;
                 const height = width * (4 / 3); // Height > width (portrait)
                 const left = Math.random() * 80;
                 const top = Math.random() * 80;
